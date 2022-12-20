@@ -103,7 +103,7 @@ function autobind(_, _2, descriptor) {
     };
     return adjDescriptor;
 }
-// Component Base Class
+// Component Base Class -> inherits from other classes for avoiding repeated and unnecessary code
 class Component {
     constructor(templateId, hostElementId, insertAtStart, newElementId) {
         this.templateElement = document.getElementById(templateId);

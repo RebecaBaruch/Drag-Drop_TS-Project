@@ -144,7 +144,7 @@ interface Draggable {
     return adjDescriptor;
   }
   
-  // Component Base Class
+  // Component Base Class -> inherits from other classes for avoiding repeated and unnecessary code
   abstract class Component<T extends HTMLElement, U extends HTMLElement> {
     templateElement: HTMLTemplateElement;
     hostElement: T;
